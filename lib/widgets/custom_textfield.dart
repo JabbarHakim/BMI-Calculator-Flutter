@@ -24,7 +24,7 @@ class CustomTextField extends StatelessWidget {
       style: const TextStyle(color: Colors.white),
       validator: (value) {
         if (value == null || value.isEmpty) {
-          return 'Field wajib diisi';
+          return 'Field must not be empty';
         }
         return null;
       },
