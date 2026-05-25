@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'utils/theme.dart';
 import 'pages/input_page.dart';
 
 void main() {
@@ -12,12 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Kalkulator BMI',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue,
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      title: 'Modern BMI Calculator',
+      theme: appTheme,
       home: InputPage(),
     );
   }
